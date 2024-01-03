@@ -1,0 +1,42 @@
+/*Agregamos variables a la raiz*/
+:root {
+  /*Paleta de colores*/
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+
+  /*Tipografias*/
+  --familyRoboto: "Roboto", sans-serif;
+
+  /*Tamaños tipográficos*/
+  --bodyTextSize: 12px;
+  --titleTextSize: 24px;
+  --priceTextSize: 18px;
+  --discountTextSize: 16px;
+  --descriptionTextSize: 16px;
+}
+
+*{
+  font-family: var(--familyRoboto);
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+
+ul {
+  padding: 0;
+}
+
+body {
+  margin: 5px 5px 0 5px;
+}
