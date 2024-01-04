@@ -9,7 +9,8 @@
   --verde: #39b54a;
 
   /*Tipografias*/
-  --familyRoboto: "Roboto", sans-serif;
+  --familyRoboto:
+  "Roboto", sans-serif;
 
   /*Tamaños tipográficos*/
   --bodyTextSize: 12px;
@@ -38,5 +39,5 @@ ul {
 }
 
 body {
-  margin: 5px 5px 0 5px;
+  margin: 0px;
 }

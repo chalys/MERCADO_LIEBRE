@@ -1,7 +1,50 @@
-main.home {}
+main.home {
+    background: var(--grisClaro);
+}
+
 main.home section.banner{}
-main.home section.banner img{}
+
+main.home section.banner img{
+    width: 100%;
+}
+
 main.home section.visited-products{}
+
+main.home section.visited-products h2{
+    font-size: var(--titleTextSize);
+}
+
 main.home section.visited-products article.product{}
-main.home section.visited-products article.product p.price{}
-main.home section.visited-products article.product p.discout{}
+
+main.home section.visited-products article.product p.price{
+    font-size: var(--titleTextSize);
+}
+
+main.home section.visited-products article.product p.discount{
+    font-size: var(--discoutTextSize);
+}
+
+main.home section.visited-products article.product h3{
+    font-size: var(--descriptionTextSize);
+}
+
+main.home section.products-offer{}
+
+main.home section.products-offer h2{
+    font-size: var(--titleTextSize);
+}
+
+main.home section.products-offer article.product{}
+
+main.home section.products-offer article.product p.price{
+    font-size: var(--priceTextSize);
+}
+
+main.home section.products-offer article.product p.discount{
+    font-size: var(--discoutTextSize);
+}
+
+main.home section.products-offer article.product h3{
+    font-size: var(--descriptionTextSize);
+}
+
