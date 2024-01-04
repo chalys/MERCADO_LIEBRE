@@ -1,5 +1,22 @@
 
 
-header {
+header.main-header {
     background-color: var(--amarillo);
+    padding-bottom: 10px;
 }
+
+header.main-header img{}
+
+header.main-header form {}
+
+header.main-header nav {}
+
+header.main-header a.burger-menu {
+    color: var(--grisClaro);
+    background-color: var(--celeste);
+    padding: 5px 7px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+header.main-header a.burger-menu i {}
