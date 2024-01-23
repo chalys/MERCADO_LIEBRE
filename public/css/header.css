@@ -4,12 +4,25 @@ header.main-header {
     background-color: var(--amarillo);
     padding-bottom: 10px;
 }
+header.main-header div.container{
+    padding: 20px;
+}
 
-header.main-header img{}
+header.main-header div.container img{}
 
-header.main-header form {}
+header.main-header div.container div.input-wrapper{
+    position: relative;
+}
 
-header.main-header nav {}
+header.main-header div.container div.input-wrapper a{
+    position: relative;
+    left: -22px;
+    transform: translateY(-50%);
+}
+
+header.main-header nav{
+    display: none;
+}
 
 header.main-header a.burger-menu {
     color: var(--grisClaro);
