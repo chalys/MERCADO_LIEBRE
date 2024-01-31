@@ -1,6 +1,6 @@
 .header {
   background-color: var(--amarillo);
-  padding: 30px 0px;
+  padding: 30px 0px 0px 0px;
 }
 
 .h-item {
@@ -22,61 +22,35 @@
   text-align: center;
   padding: 20px 0px;
 }
-.h-item__navbar {
-}
+.nav{}
+
+.navbar{}
+
 .navbar__list {
 }
 .navbar__item {
 }
 .navbar__link {
 }
-.h-item__loginbar {
+.loginbar {
 }
 .navbar__icon {
 }
+
 .h-item__menu {
   text-align: center;
 }
-.burger-menu {
+.burger--menu {
   background-color: var(--celeste);
   color: var(--blanco);
   padding: 10px;
   border-radius: 5px;
 }
 
-/*
-header.main-header {
-    
-    padding-bottom: 10px;
-}
-header.main-header div.container{
-    padding: 20px;
+.h-item__banner{
+  
 }
 
-header.main-header div.container img{}
-
-header.main-header div.container div.input-wrapper{
-    position: relative;
+.banner{
+  width: 100%;
 }
-
-header.main-header div.container div.input-wrapper a{
-    position: relative;
-    left: -22px;
-    transform: translateY(-50%);
-}
-
-header.main-header nav{
-    display: none;
-}
-
-header.main-header a.burger-menu {
-    color: var(--grisClaro);
-    background-color: var(--celeste);
-    padding: 5px 7px;
-    font-size: 1.3rem;
-    border-radius: 5px;
-}
-
-header.main-header a.burger-menu i {}
-
-*/

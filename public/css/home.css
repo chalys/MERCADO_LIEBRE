@@ -1,18 +1,23 @@
 .main {
     background: var(--grisClaro);
-    width: 100%;
+    width: 90%;
 }
-.m-section {
-}
-.m-section__banner{
-    width: 100%;
-}
+.m-section {}
 .m-section__title {font-size: var(--titleTextSize);}
 
-.m-section__product {background-color: var(--blanco);}
+.m-section__product {background-color: var(--blanco);margin: 10px;}
 .product__image {width: 100%;}
-.product__icon {
+.product__general{
+    border-top: 1px solid var(--grisClaro);
+    padding: 15px;
 }
+.product__icon {color: var(--verde);border: 1px solid var(--verde);border-radius: 50%;padding: 10px;}
 .product__price {font-size: var(--priceTextSize);}
-.product__discount {font-size: var(--discountTextSize);}
+.product__discount {font-size: var(--discountTextSize);color: var(--verde);}
 .product__description {font-size: var(----descriptionTextSize);}
+
+/* Tablet */
+@media (min-width: 426px) { }
+
+/* Desktop */
+@media (min-width:769px) { }
