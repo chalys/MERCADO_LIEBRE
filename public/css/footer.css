@@ -1,25 +1,43 @@
-footer.main-footer{
+.footer{
     text-align: center;
+    width: 100%;
 }
 
-footer.main-footer nav{}
+.f-item{padding: 15px;}
 
-footer.main-footer nav ul{}
-footer.main-footer nav ul li{
-    padding: 20px 40px 20px 40px;
+.f-item__icon{
+    
+font-size: 2em;
+    
+color: var(--celeste);
+    
+margin-bottom: 10px;
 }
-footer.main-footer nav ul li i{
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: var(--celeste);
+
+.f-item__title{
+color: var(--grisOscuro);
+margin: 0px;
 }
+
+.f-item__description{
+color: var(--grisOscuro);
+font-size: var(--bodyTextSize);
+margin: 0px;
+}
+
+.f-item__copyright{
+
+color: var(--grisOscuro);
+}
+/*
+
 footer.main-footer nav ul li h3{
     color: var(--grisOscuro);
     margin-bottom: 0px;
     /* font-size: var(--titleTextSize); */
-}
+/*
 footer.main-footer nav ul li p{
     color: var(--grisOscuro);
     font-size: var(--bodyTextSize);
     margin-top: 0px;
-}
+}*/

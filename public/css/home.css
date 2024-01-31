@@ -1,94 +1,18 @@
-body.home-body {
-    
-}
-
-main.home {
+.main {
     background: var(--grisClaro);
-}
-
-main.home section.banner{}
-
-main.home section.banner img{
     width: 100%;
 }
-
-main.home section.visited-products{}
-
-main.home section.visited-products h2{
-    font-size: var(--titleTextSize);
-    text-align: center;
+.m-section {
 }
-
-main.home section.visited-products article.product{
-    background: #fff;
-    padding: 20px 20px 20px 21px;
-    margin: 20px;
+.m-section__banner{
+    width: 100%;
 }
+.m-section__title {font-size: var(--titleTextSize);}
 
-main.home section.visited-products article.product img{width: 100%;}
-
-main.home section.visited-products article.product i{
-
-color: var(--verde);
-
-padding: 5px;
-
-border: var(--verde) 2px solid;
-
-border-radius: 50px;
+.m-section__product {background-color: var(--blanco);}
+.product__image {width: 100%;}
+.product__icon {
 }
-
-main.home section.visited-products article.product p.price{
-    font-size: var(--titleTextSize);
-}
-
-main.home section.visited-products article.product p.discount{
-    font-size: var(--discoutTextSize);
-    color: var(--verde);
-}
-
-main.home section.visited-products article.product h3{
-    font-size: var(--descriptionTextSize);
-}
-
-main.home section.products-offer{}
-
-main.home section.products-offer h2{
-    font-size: var(--titleTextSize);
-    text-align: center;
-}
-
-main.home section.products-offer article.product{
-    background: #fff;
-    padding: 20px 20px 20px 21px;
-    margin: 20px;
-}
-
-main.home section.products-offer article.product img{
-
-width: 100%;
-}
-main.home section.products-offer article.product i{
-
-color: var(--verde);
-
-padding: 5px;
-
-border: var(--verde) 2px solid;
-
-border-radius: 50px;
-}
-
-main.home section.products-offer article.product p.price{
-    font-size: var(--priceTextSize);
-}
-
-main.home section.products-offer article.product p.discount{
-    font-size: var(--discoutTextSize);
-    color: var(--verde);
-}
-
-main.home section.products-offer article.product h3{
-    font-size: var(--descriptionTextSize);
-}
-
+.product__price {font-size: var(--priceTextSize);}
+.product__discount {font-size: var(--discountTextSize);}
+.product__description {font-size: var(----descriptionTextSize);}
