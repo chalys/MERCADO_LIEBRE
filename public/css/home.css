@@ -1,5 +1,24 @@
-main.home {
+.main {
     background: var(--grisClaro);
+    width: 100%;
+}
+.m-section {
+}
+.m-section__banner{
+    width: 100%;
+}
+.m-section__title {font-size: var(--titleTextSize);}
+
+.m-section__product {background-color: var(--blanco);}
+.product__image {width: 100%;}
+.product__icon {
+}
+.product__price {font-size: var(--priceTextSize);}
+.product__discount {font-size: var(--discountTextSize);}
+.product__description {font-size: var(----descriptionTextSize);}
+
+/*main.home {
+    
 }
 
 main.home section.banner{}
@@ -8,12 +27,6 @@ main.home section.banner img{
     width: 100%;
 }
 
-main.home section.visited-products{}
-
-main.home section.visited-products h2{
-    font-size: var(--titleTextSize);
-    text-align: center;
-}
 
 main.home section.visited-products article.product{
     background: #fff;
@@ -24,10 +37,14 @@ main.home section.visited-products article.product{
 main.home section.visited-products article.product img{width: 100%;}
 
 main.home section.visited-products article.product i{
-color: var(--verde);
-padding: 5px;
-border: var(--verde) 2px solid;
-border-radius: 50px;
+
+color: var(--verde);
+
+padding: 5px;
+
+border: var(--verde) 2px solid;
+
+border-radius: 50px;
 }
 
 main.home section.visited-products article.product p.price{
@@ -57,25 +74,20 @@ main.home section.products-offer article.product{
 }
 
 main.home section.products-offer article.product img{
-width: 100%;
+
+width: 100%;
 }
 main.home section.products-offer article.product i{
-color: var(--verde);
-padding: 5px;
-border: var(--verde) 2px solid;
-border-radius: 50px;
+
+color: var(--verde);
+
+padding: 5px;
+
+border: var(--verde) 2px solid;
+
+border-radius: 50px;
 }
 
-main.home section.products-offer article.product p.price{
-    font-size: var(--priceTextSize);
-}
 
-main.home section.products-offer article.product p.discount{
-    font-size: var(--discoutTextSize);
-    color: var(--verde);
-}
 
-main.home section.products-offer article.product h3{
-    font-size: var(--descriptionTextSize);
-}
-
+*/

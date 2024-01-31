@@ -1,12 +1,15 @@
 /*Agregamos variables a la raiz*/
 :root {
   /*Paleta de colores*/
-  --amarillo: #eac926;
-  --azul: #03264c;
-  --celeste: #1259c3;
-  --grisOscuro: #666;
-  --grisClaro: #ebebeb;
-  --verde: #39b54a;
+  --amarillo:#eac926;
+  --azul:#03264c;
+  --celeste:#1259c3;
+  --grisOscuro:#666;
+  --grisClaro:#ebebeb;
+  --verde:#39b54a;
+  --blanco:#fff;
+  --negro:#000;
+
 
   /*Tipografias*/
   --familyRoboto:
@@ -21,6 +24,7 @@
 }
 
 *{
+  box-sizing: border-box;
   font-family: var(--familyRoboto);
 }
 
@@ -35,7 +39,7 @@ li{
 
 
 ul {
-  padding: 0;
+  padding: 0px;
 }
 
 body {
