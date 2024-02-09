@@ -83,11 +83,15 @@
                 <input type="email" class="form-control" id="emailInput">
             </div>
             <!-- Fecha de Nacimiento -->
-            <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
-                <label for="fechaNac">Fecha de nacimiento</label>
-                <input class="form-control form-control-sm" type="date" name="fechaNac" value="2024-08-02"
-                    id="fechaNac">
+            <div>
+                <h5 class="col-12">Fecha de nacimiento</h5>
+                <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
+                    <label for="fechaNac">Fecha de nacimiento</label>
+                    <input class="form-control form-control-sm" type="date" name="fechaNac" value="2024-08-02"
+                        id="fechaNac">
+                </div>
             </div>
+            
             <!-- Domicilio -->
             <div class="mb-3">
                 <label for="addressInput" class="form-label">Domicilio</label>
@@ -142,6 +146,16 @@
                 </div>
             </div>
             <!-- Foto de usuario -->
+            <div class="col-10 col-md-8 d-flex mx-2 flex-column mb-3">
+                <label class="" for="avatar">
+                    <figure class="container-preview-img mx-auto">
+                        <img src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp"
+                            alt="avatar default">
+                    </figure>
+                </label>
+                <input class="form-control form-control-sm mx-auto" type="file" name="avatar" id="avatar" value="avatar"
+                    accept=".jpg" multiple>
+            </div>
             <!-- Contraseñas -->
             <div>
                 <div class="mb-3">
@@ -191,3 +205,5 @@
 </body>
 
 </html>
+
+<!-- https://getbootstrap.com/docs/4.2/components/forms/? -->
