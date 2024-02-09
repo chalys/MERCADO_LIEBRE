@@ -65,8 +65,43 @@
     </header>
 
     <!-- main -->
-    <main class="main">
+    <main class="login container mt-5">
+        <div class="row justify-content-center">
+            <div data-aos="fade-up" data-aos-duration="2000" class="card col-10 col-md-4 shadow ">
+                <div class="card-body">
+                    <h5 class="card-title border-dark border-bottom border-3 text-end mb-5">Login</h5>
 
+                    <form action="/login" method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" placeholder="correo@correo.com" class="form-control" id="email">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" placeholder="tu contraseña" id="password">
+                        </div>
+
+                        <div class="form-text text-danger fw-bold text-center">Credenciales invalidas</div>
+
+                        <div class="form-text d-flex gap-1">
+                            ¿No estás registrado?
+                            <a href="/registrar" class="link-custom-orange">Registrate</a>
+                        </div>
+
+                        <div class="my-3 form-check">
+                            <input type="checkbox" name="remember" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">Recordame</label>
+                        </div>
+
+                        <div class="text-end">
+                            <a href="/" class="btn btn-secondary">Cancelar</a>
+                            <button type="submit" class="btn btn-custom-orange">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- footer -->
     <footer class="footer">
