@@ -25,12 +25,21 @@
             <img class="h-item__logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
         </div>
         <!-- search bar -->
-        <div class="h-item search">
+        <form action="">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control input-text" placeholder="Search products...."
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-warning btn-lg" type="button"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <!-- <div class="h-item search">
             <form class="form" action="">
                 <input class="form--input" type="text" name="search" placeholder="Buscar productos, marcas">
                 <i class="icon--btn fa-solid fa-magnifying-glass"></i>
             </form>
-        </div>
+        </div> -->
         <div class="h-item 
         message"><i class="fa-solid fa-hand-holding-droplet"></i> Comprá en cuotas y sin tarjeta de crédito
         </div>
@@ -69,49 +78,46 @@
         <form action="/registro" method="post" class="row justify-content-center">
             <!-- Nombre y Apellido -->
             <div class="mb-3">
-                <label for="fullNameInput" class="form-label">Nombre y apellido</label>
-                <input type="text" class="form-control" id="fullNameInput">
+                <input type="text" class="form-control" id="fullNameInput" placeholder="Nombre y apellido">
             </div>
             <!-- Nombre de Usuario -->
             <div class="mb-3">
-                <label for="nameUserInput" class="form-label">Nombre de usuario</label>
-                <input type="text" class="form-control" id="nameUserInput">
+                <input type="text" class="form-control" id="nameUserInput" placeholder="Nombre de usuario">
             </div>
             <!-- Email -->
             <div class="mb-3">
-                <label for="emailInput" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="emailInput">
+                <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
             </div>
             <!-- Fecha de Nacimiento -->
-            <div>
+            <div class="mb-3">
                 <h5 class="col-12">Fecha de nacimiento</h5>
-                <div class="col-10 col-md-6 col-lg-4 d-flex flex-column mb-3">
-                    <label for="fechaNac">Fecha de nacimiento</label>
-                    <input class="form-control form-control-sm" type="date" name="fechaNac" value="2024-08-02"
-                        id="fechaNac">
-                </div>
+                <!-- <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-3"> -->
+                <div class="mb-3"></div>
+                <input type="date" class="form-control" id="fechaNac" name="fechaNac" value="2024-08-02">
             </div>
-            
+            </div>
             <!-- Domicilio -->
             <div class="mb-3">
-                <label for="addressInput" class="form-label">Domicilio</label>
-                <input type="text" class="form-control" id="addressInput">
+                <input type="text" class="form-control" id="addressInput" placeholder="Domicilio">
             </div>
             <!-- Perfil de usuario -->
-            <div class="col-10 col-md-12 row p-0 my-2">
+            <!-- <div class="col-10 col-md-12 row p-0 my-2"> -->
+            <div class="mb-3 " >
                 <h5 class="col-12">Perfil del usuario</h5>
-                <div class="col-12 col-md-3">
+                <div class="d-flex flex-column">
+                <div class="col-5 col-md-3">
                     <input type="radio" class="form-check-input" name="perfilUsuario" id="compra" value="compra"
                         checked>
                     <label for="compra">Comprador</label>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-5 col-md-3">
                     <input type="radio" class="form-check-input" name="perfilUsuario" id="venta" value="venta">
                     <label for="venta">Vendedor</label>
                 </div>
             </div>
+            </div>
             <!-- Intereses -->
-            <div class="toast-container">
+            <div>
                 <h5 class="col-12">Intereses</h5>
                 <div class="col-12">
                     <input class="form-check-input" type="checkbox" name="intereses" value="electro" id="electro"
@@ -160,11 +166,11 @@
             <div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" required>
                 </div>
                 <div class="mb-3">
-                    <label for="confirmationPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="confirmationPassword">
+                    <label for="confirmationPassword" class="form-label">Repeat password</label>
+                    <input type="password" class="form-control" id="confirmationPassword" required>
                 </div>
             </div>
             <!-- Botones-->
