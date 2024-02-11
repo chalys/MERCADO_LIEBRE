@@ -66,7 +66,7 @@
 }
 
 /* Tablet */
-@media (min-width: 361px) {
+@media (min-width: 426px) {
   .header {display: flex;flex-wrap: wrap;}
   .logo{
     width: 33.3%;
