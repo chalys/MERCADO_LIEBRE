@@ -21,29 +21,30 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="h-item logo">
-            <img class="h-item__logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
-        </div>
-        <!-- search bar -->
-        <form action="">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control input-text" placeholder="Search products...."
-                    aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-warning btn-lg" type="button"><i class="fa fa-search"></i></button>
-                </div>
+        <div class="h-item-top">
+            <!-- logo -->
+            <div class="h-item logo">
+                <img class="h-item__logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
             </div>
-        </form>
-        <!-- <div class="h-item search">
-            <form class="form" action="">
-                <input class="form--input" type="text" name="search" placeholder="Buscar productos, marcas">
-                <i class="icon--btn fa-solid fa-magnifying-glass"></i>
+            <!-- search bar -->
+            <form action="/registro" method="get" class="h-item h-item-search">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control input-text" placeholder="Buscar productos, marcas"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-warning btn-lg btn-custom-search" type="button"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
             </form>
-        </div> -->
-        <div class="h-item 
+            <!-- slogan -->
+            <div class="h-item 
         message"><i class="fa-solid fa-hand-holding-droplet"></i> Comprá en cuotas y sin tarjeta de crédito
+            </div>
         </div>
-        <div class="h-item nav">
+
+        <!-- nav bar general -->
+        <div class="h-item nav-gerenal">
             <!-- nav bar -->
             <nav class="navbar">
                 <ul class="navbar__list">
@@ -74,109 +75,140 @@
     </header>
 
     <!-- main -->
-    <main class="register container my-5">
-        <form action="/registro" method="post" class="row justify-content-center">
-            <!-- Nombre y Apellido -->
-            <div class="mb-3">
-                <input type="text" class="form-control" id="fullNameInput" placeholder="Nombre y apellido">
-            </div>
-            <!-- Nombre de Usuario -->
-            <div class="mb-3">
-                <input type="text" class="form-control" id="nameUserInput" placeholder="Nombre de usuario">
-            </div>
-            <!-- Email -->
-            <div class="mb-3">
-                <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
-            </div>
-            <!-- Fecha de Nacimiento -->
-            <div class="mb-3">
-                <h5 class="col-12">Fecha de nacimiento</h5>
-                <!-- <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-3"> -->
-                <div class="mb-3"></div>
-                <input type="date" class="form-control" id="fechaNac" name="fechaNac" value="2024-08-02">
-            </div>
-            </div>
-            <!-- Domicilio -->
-            <div class="mb-3">
-                <input type="text" class="form-control" id="addressInput" placeholder="Domicilio">
-            </div>
-            <!-- Perfil de usuario -->
-            <!-- <div class="col-10 col-md-12 row p-0 my-2"> -->
-            <div class="mb-3 ">
-                <h5 class="col-12">Perfil del usuario</h5>
-                <div class="d-flex justify-content-around">
-                    <div>
-                        <input type="radio" class="form-check-input" name="perfilUsuario" id="compra" value="compra"
+    <main>
+
+        <!-- banner -->
+        <div class="m-section m-section__banner"><img class="banner" src="/images/img-home-banner.jpg"
+                alt="img-home-banner">
+        </div>
+        <div class="register container my-5">
+            <form class="row justify-content-center needs-validation" novalidate>
+                <!-- Nombre y Apellido -->
+                <div class="col-10 col-md-6 col-lg-4 mb-3">
+                    <label for="fullNameInput" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="fullNameInput" placeholder="Nombre y apellido" required>
+                    <div class="invalid-feedback">
+                        Valor inválido
+                    </div>
+                </div>
+                <!-- Nombre de Usuario -->
+                <div class="col-10 col-md-6 col-lg-4 mb-3">
+                    <input type="text" class="form-control" id="nameUserInput" placeholder="Nombre de usuario" required>
+                    <div class="invalid-feedback">
+                        Valor inválido
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="col-10 col-md-6 col-lg-4 mb-3">
+                    <input type="email" class="form-control" id="emailInput" placeholder="E-mail" required>
+                    <div class="invalid-feedback">
+                        Valor inválido
+                    </div>
+                </div>
+                <!-- Fecha de Nacimiento -->
+                <div class="col-10 col-md-6 col-lg-4 mb-3">
+                    <h5 class="col-12">Fecha de nacimiento</h5>
+                    <!-- <div class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-3"> -->
+                    <div class="mb-3"></div>
+                    <input type="date" class="form-control" id="fechaNac" name="fechaNac" value="2024-08-02">
+                    <div class="invalid-feedback">
+                        Valor inválido
+                    </div>
+                </div>
+
+                <!-- Domicilio -->
+                <div class="col-10 col-md-6 col-lg-4 mb-3">
+                    <input type="text" class="form-control" id="addressInput" placeholder="Domicilio" required>
+                    <div class="invalid-feedback">
+                        Valor inválido
+                    </div>
+                </div>
+                <!-- Perfil de usuario -->
+                <!-- <div class="col-10 col-md-12 row p-0 my-2"> -->
+                <div class="col-10 col-md-6 col-lg-4 mb-3 ">
+                    <h5 class="col-12">Perfil del usuario</h5>
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <input type="radio" class="form-check-input" name="perfilUsuario" id="compra" value="compra"
+                                checked>
+                            <label for="compra">Comprador</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="form-check-input" name="perfilUsuario" id="venta" value="venta">
+                            <label for="venta">Vendedor</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Intereses -->
+                <div class="col-10 col-md-6 col-lg-4 mb-3 ">
+                    <h5 class="col-12">Intereses</h5>
+                    <div class="col-12 col-md-4 ps-3 pb-3">
+                        <input class="form-check-input" type="checkbox" name="intereses" value="electro" id="electro"
                             checked>
-                        <label for="compra">Comprador</label>
+                        <label class="form-check-label" for="electro">
+                            Electro
+                        </label>
                     </div>
-                    <div>
-                        <input type="radio" class="form-check-input" name="perfilUsuario" id="venta" value="venta">
-                        <label for="venta">Vendedor</label>
+                    <div class="col-12 col-md-4 ps-3 pb-3">
+                        <input class="form-check-input" type="checkbox" name="intereses" value="moda" id="moda">
+                        <label class="form-check-label" for="moda">
+                            Moda
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-4 ps-3 pb-3">
+                        <input class="form-check-input" type="checkbox" name="intereses" value="hogar" id="hogar">
+                        <label class="form-check-label" for="hogar">
+                            Hogar
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-4 ps-3 pb-3">
+                        <input class="form-check-input" type="checkbox" name="intereses" value="jugueteria"
+                            id="jugueteria">
+                        <label class="form-check-label" for="jugueteria">
+                            Juguetería
+                        </label>
+                    </div>
+                    <div class="col-12 col-md-4 ps-3 pb-3">
+                        <input class="form-check-input" type="checkbox" name="intereses" value="vidaSana" id="vidaSana">
+                        <label class="form-check-label" for="vidaSana">
+                            Vida sana
+                        </label>
                     </div>
                 </div>
-            </div>
-            <!-- Intereses -->
-            <div class="mb-3 ">
-                <h5 class="col-12">Intereses</h5>
-                <div class="col-12 ps-3 pb-3">
-                    <input class="form-check-input" type="checkbox" name="intereses" value="electro" id="electro"
-                        checked>
-                    <label class="form-check-label" for="electro">
-                        Electro
-                    </label>
+                <!-- Foto de usuario -->
+                <div class="col-10 col-md-6 col-lg-4 d-flex mx-2 flex-column mb-3 align-items-center">
+                    <figure class="container-preview-img">
+                        <img class="avatar-img"
+                            src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp"
+                            alt="avatar default">
+                    </figure>
+                    <input class="form-control form-control-sm mx-auto" type="file" name="avatar" id="avatar"
+                        value="avatar" accept=".jpg" multiple>
                 </div>
-                <div class="col-12 ps-3 pb-3">
-                    <input class="form-check-input" type="checkbox" name="intereses" value="moda" id="moda">
-                    <label class="form-check-label" for="moda">
-                        Moda
-                    </label>
+                <!-- Contraseñas -->
+                <div class="col-10 col-md-6 col-lg-4 pwd">
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        <div class="invalid-feedback">
+                            Valor inválido
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="confirmationPassword"
+                            placeholder="Password Confirmation" required>
+                        <div class="invalid-feedback">
+                            Valor inválido
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 ps-3 pb-3">
-                    <input class="form-check-input" type="checkbox" name="intereses" value="hogar" id="hogar">
-                    <label class="form-check-label" for="hogar">
-                        Hogar
-                    </label>
+                <!-- Botones-->
+                <div class="col-10 col-md-6 col-lg-4 d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    <button type="button" class="btn btn-danger btn-block">Borrar</button>
                 </div>
-                <div class="col-12 ps-3 pb-3">
-                    <input class="form-check-input" type="checkbox" name="intereses" value="jugueteria" id="jugueteria">
-                    <label class="form-check-label" for="jugueteria">
-                        Juguetería
-                    </label>
-                </div>
-                <div class="col-12 ps-3 pb-3">
-                    <input class="form-check-input" type="checkbox" name="intereses" value="vidaSana" id="vidaSana">
-                    <label class="form-check-label" for="vidaSana">
-                        Vida sana
-                    </label>
-                </div>
-            </div>
-            <!-- Foto de usuario -->
-            <div class="col-10 col-md-8 d-flex mx-2 flex-column mb-3">
-                <figure class="container-preview-img mx-auto">
-                    <img src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.webp"
-                        alt="avatar default">
-                </figure>
-                <input class="form-control form-control-sm mx-auto" type="file" name="avatar" id="avatar" value="avatar"
-                    accept=".jpg" multiple>
-            </div>
-            <!-- Contraseñas -->
-            <div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" required>
-                </div>
-                <div class="mb-3">
-                    <label for="confirmationPassword" class="form-label">Repeat password</label>
-                    <input type="password" class="form-control" id="confirmationPassword" required>
-                </div>
-            </div>
-            <!-- Botones-->
-            <div class="d-grid gap-2">
-                <button type="button" class="btn btn-primary btn-block">Enviar</button>
-                <button type="button" class="btn btn-danger btn-block">Borrar</button>
-            </div>
-        </form>
+            </form>
+        </div>
+
     </main>
     <!-- footer -->
     <footer class="footer">
@@ -205,6 +237,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </body>
 
 </html>

@@ -6,24 +6,27 @@
   align-items: center;
 }
 
-.h-item {}
-.logo{
-    width: 50%;
+.h-item-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h-item {
+}
+.h-item-search {
+  width: 55%;
+}
+.logo {
+  width: 40%;
 }
 .h-item__logo {
 }
 
-.search {width: 50%;}
-
-.form {display: flex;}
-
-.form--input {width: 90%;}
-
-.icon--btn {
-  background-color: var(--blanco);
-  border: 1px solid var(--negro);
-  border-radius: 3px;
-  padding: 1.5px;
+.btn-custom-search {
+  background: var(--blanco) !important;
+  color: var(--grisOscuro) !important;
 }
 
 .message {
@@ -32,26 +35,27 @@
   width: 100%;
 }
 
-.nav {
+.nav-gerenal {
   display: none;
 }
 
 .navbar {
-    width: 50%;
+  width: 50%;
 }
 
-.navbar__list {
+.navbar__list {}
+
+.navbar__item {
 }
 
-.navbar__item {}
-
-.navbar__link {}
+.navbar__link {color: var(--negro);text-decoration: none;}
 
 .loginbar {
-    width: 50%;
+  width: 50%;
 }
 
-.navbar__icon {}
+.navbar .navbar__icon {
+}
 
 .h-item__menu {
   text-align: center;
@@ -63,23 +67,41 @@
   color: var(--blanco);
   padding: 10px;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 /* Tablet */
 @media (min-width: 426px) {
-  .header {display: flex;flex-wrap: wrap;}
-  .logo{
-    width: 33.3%;
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .h-item-top{
+  width: 100%;  
+  }
+
+  .h-item__logo {
+    
+  }
+  .h-item-search{
+width: 33.3%;
 }
-  .h-item__logo {width: 50%;}
-  
-  .search {width: 33.3%;}
-  
+  .logo {
+    width: 33.3%;
+  }
+
+
+  .search {
+    width: 33.3%;
+  }
+
   .form {
   }
-  
-  .form--input {}
-  
+
+  .form--input {
+  }
+
   .icon--btn {
     background-color: var(--blanco);
     border: 1px solid var(--negro);
@@ -91,27 +113,34 @@
     text-align: center;
     padding: 20px 0px;
     width: 33.3%;
+    font-size: 0.8rem;
   }
 
-  
-  .nav {
-    /* display: block; */
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+  .nav-gerenal {
+
+display: flex;
+
+flex-wrap: wrap;
+
+width: 100%;
+
+align-items: center;
+
+}
 
   .h-item__menu {
     display: none;
-
   }
   .navbar__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+    gap: 7px;
+    font-size: 0.8rem;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
-
-
 /* Desktop */
-@media (min-width:769px) {}
+@media (min-width: 769px) {
+}
