@@ -6,3 +6,7 @@
 @import "header.css";
 @import "footer.css";
 @import "register.css";
+@import "./forms.css";
+@import "./product.css";
+@import "./login.css";
+

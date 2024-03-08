@@ -6,7 +6,6 @@ const router = express.Router();
 const { list, detail } = require('../controllers/products');
 
 // /productos
-
 //*** GET ALL PRODUCTS ***/
 router.get('/', list);
 

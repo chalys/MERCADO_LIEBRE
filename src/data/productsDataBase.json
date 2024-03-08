@@ -1,182 +1,146 @@
 [
     {
-        "id": 1,
-        "name": "Laptop HP Pavilion",
-        "price": 899.99,
-        "discount": 50,
-        "category": "in-sale",
-        "description": "Potente laptop con procesador Intel Core i5, 8GB de RAM y 512GB de almacenamiento SSD.",
-        "image": "https://ejemplo.com/imagen1.jpg"
+     "id": 1,
+     "name": "Cafetera Moulinex Dolce Gusto Edited",
+     "price": 100,
+     "discount": 50,
+     "category": "visited",
+     "description": "Cafetera Dolce Gusto Lumio. La cafetera Dolce Gusto Lumio es de variedad automática que ha llegado con un diseño radical al que nos tenía acostumbrados Dolce Gusto.En este post te contamos todo lo que necesitas saber sobre ella, desde sus características técnicas hasta la calidad de las cápsulas o price.",
+     "image": "img-cafetera-moulinex.jpg"
     },
     {
-        "id": 2,
-        "name": "Smartphone Samsung Galaxy S20",
-        "price": 799.99,
-        "discount": 100,
-        "category": "in-sale",
-        "description": "Teléfono inteligente con cámara de alta resolución, pantalla AMOLED y carga rápida.",
-        "image": "https://ejemplo.com/imagen2.jpg"
+     "id": 2,
+     "name": "Macbook Pro 2022",
+     "price": 500,
+     "discount": 3,
+     "category": "in-sale",
+     "description": "Macbook Pro 2019 Mpxq2ll/a Intel Core i5 2.3 Ghz 8gb RAM 128gb SSD Pantalla 13.3\" Retina Apple Nueva Original. Importada de USA. Se entrega con la factura de compra para contar con la garantía del fabricante",
+     "image": "img-macbook-pro-2019.jpg"
     },
     {
-        "id": 3,
-        "name": "Refrigerador LG Inverter",
-        "price": 1299.99,
-        "discount": 200,
-        "category": "in-sale",
-        "description": "Refrigerador con tecnología Inverter que ahorra energía y mantiene los alimentos frescos por más tiempo.",
-        "image": "https://ejemplo.com/imagen3.jpg"
+     "id": 3,
+     "name": "Samsung Galaxy S10",
+     "price": 72999,
+     "discount": 25,
+     "category": "in-sale",
+     "description": "Experiencia visual excepcional. Mirá tus series y películas favoritas con la mejor definición.Tendrás colores brillantes y detalles precisos en todos tus contenidos.Disfrutá aún más del mejor entretenimiento gracias a su vasta pantalla y ángulos de visión amplios.",
+     "image": "img-samsung-galaxy-s10.jpg"
     },
     {
-        "id": 4,
-        "name": "PC Gaming Alienware Aurora",
-        "price": 1999.99,
-        "discount": 0,
-        "category": "visited",
-        "description": "Potente PC para gaming con procesador Intel Core i7, tarjeta gráfica NVIDIA GeForce RTX 3080 y 16GB de RAM.",
-        "image": "https://ejemplo.com/imagen4.jpg"
+     "id": 4,
+     "name": "Heladera no frost Whirlpool WRM45A",
+     "description": "Disfrutá de la frescura de tus alimentos y almacenalos de manera práctica y cómoda en tu heladera Whirlpool, la protagonista de tu cocina. Su sistema no frost evita la generación de escarcha y te permitirá conservar el sabor y las propiedades nutritivas de los productos.A su vez, su freezer cuenta con una capacidad de 86 litros, que facilitará la distribución y el orden de tus congelados para que no te preocupes por la falta de espacio.",
+     "price": 47900,
+     "discount": 10,
+     "image": "img-heladera-whirpool.jpg",
+     "category": "in-sale"
     },
     {
-        "id": 5,
-        "name": "Aspiradora Dyson V11",
-        "price": 499.99,
-        "discount": 50,
-        "category": "visited",
-        "description": "Aspiradora sin cable con potente succión y hasta 60 minutos de autonomía de batería.",
-        "image": "https://ejemplo.com/imagen5.jpg"
+     "id": 5,
+     "name": "Nikon Reflex D3500 - Kit",
+     "description": "Incluye la cámara D3500, el objetivo zoom AF-P DX NIKKOR 18-55mm y el superteleobjetivo zoom compacto AF-P DX NIKKOR 70-300mm. Ambos objetivos enfocan de forma rápida y silenciosa, lo que resulta ideal para grabar metraje de vídeo sin que se escuche apenas el ruido del accionamiento.",
+     "price": 53000,
+     "discount": 20,
+     "image": "img-camara-nikon.jpg",
+     "category": "in-sale"
     },
     {
-        "id": 6,
-        "name": "Tablet Apple iPad Pro",
-        "price": 1099.99,
-        "discount": 0,
-        "category": "in-sale",
-        "description": "Tableta con pantalla Retina de 12.9 pulgadas, procesador A12Z Bionic y 256GB de almacenamiento.",
-        "image": "https://ejemplo.com/imagen6.jpg"
+     "id": 6,
+     "name": "Aire Acondicionado 3200w Frio / Calor",
+     "description": "AIRE SPLIT 3200W TACA-3200WCHSA/KC FC TCL. Capacidad frio 3200 Watts. Capacidad calor 3300 Watts. Potencia Electrica(W)frio 996. Potencia Electrica(W)calor 1028. Eficiencia energética calor C. Eficiencia energética frio A. Frigorias 2750 UNIDAD INTERIOR. Peso Bruto 10kg. Peso Neto 7 kg",
+     "price": 20999,
+     "discount": 12,
+     "image": "img-aire-acondicionado.jpg",
+     "category": "in-sale"
     },
     {
-        "id": 7,
-        "name": "Lavadora Samsung EcoBubble",
-        "price": 899.99,
-        "discount": 100,
-        "category": "in-sale",
-        "description": "Lavadora con tecnología EcoBubble que garantiza una limpieza profunda y eficiente.",
-        "image": "https://ejemplo.com/imagen7.jpg"
+     "id": 7,
+     "name": "Notebook Lenovo I3 Intel 8gb Ram",
+     "description": "PROCESADOR / CHIPSET. CPU: Intel Core i3(8a generación) 8130U / 2.2 GHz. Velocidad turbo máxima: 3, 4 GHz. Numero de núcleos: Doble núcleo. Cache: 4 MB. Arquitectura de 64 bit: ss. MEMORIA CACHÉ. Tamaño instalada: 4 MB. ALMACENAMIENTO. Interfaz Serial ATA - 600",
+     "price": 36700,
+     "discount": 5,
+     "image": "img-laptop-lenovo.jpg",
+     "category": "in-sale"
     },
     {
-        "id": 8,
-        "name": "Monitor LG UltraWide",
-        "price": 399.99,
-        "discount": 0,
-        "category": "visited",
-        "description": "Monitor ultrapanorámico con resolución QHD y tecnología AMD FreeSync para una experiencia de juego fluida.",
-        "image": "https://ejemplo.com/imagen8.jpg"
+     "id": 8,
+     "name": "Apple iPhone 11 Pro Dual SIM 256 GB",
+     "description": "¡El nuevo smartphone que lo tiene todo! Con este lanzamiento, Apple ha superado todos sus récords. Su diseño se destaca por sus líneas finas y distinguidas a partir de una sola hoja de vidrio resistente, combinada con aluminio de excelente calidad.",
+     "price": 148000,
+     "discount": 2,
+     "image": "img-iphone-11.jpg",
+     "category": "in-sale"
     },
     {
-        "id": 9,
-        "name": "Teléfono inalámbrico Panasonic",
-        "price": 49.99,
-        "discount": 0,
-        "category": "visited",
-        "description": "Teléfono inalámbrico con identificador de llamadas, agenda telefónica y pantalla LCD retroiluminada.",
-        "image": "https://ejemplo.com/imagen9.jpg"
+     "id": 9,
+     "name": "Teclado Apple Magic Inalámbrico",
+     "description": "El teclado mágico combina un diseño elegante con una batería recargable incorporada y funciones clave mejoradas. Con un mecanismo de tijera estable debajo de cada tecla, así como un recorrido de teclas optimizado y un perfil bajo, el Teclado Mágico ofrece una experiencia de escritura notablemente cómoda y precisa.",
+     "price": 11399,
+     "discount": 0,
+     "image": "img-apple-magic-keyboard.jpg",
+     "category": "visited"
     },
     {
-        "id": 10,
-        "name": "Secadora Bosch Serie 6",
-        "price": 699.99,
-        "discount": 50,
-        "category": "visited",
-        "description": "Secadora con bomba de calor que cuida tu ropa y reduce el consumo de energía.",
-        "image": "https://ejemplo.com/imagen10.jpg"
+     "id": 10,
+     "name": "Mouse Inalámbrico Logitech M280",
+     "description": "Uso más cómodo para la mano derecha gracias a la forma contorneada con recubrimiento de goma blanda. Duración de las pilas hasta 18 meses, gracias al diseño para ahorrar energía.El M280 entra automáticamente en estado de suspensión cuando no se está usando.",
+     "price": 1200,
+     "discount": 10,
+     "image": "img-mouse-logitech.jpg",
+     "category": "visited"
     },
     {
-        "id": 11,
-        "name": "Portátil Lenovo ThinkPad",
-        "price": 1099.99,
-        "discount": 0,
-        "category": "in-sale",
-        "description": "Portátil empresarial con procesador Intel Core i5, 16GB de RAM y almacenamiento SSD de 512GB.",
-        "image": "https://ejemplo.com/imagen11.jpg"
+     "id": 11,
+     "name": "Parlante Inalámbrico Bose Soundtouch 10",
+     "description": "Parlante Inalámbrico Bose Soundtouch 10. SoundTouch®.La manera más sencilla de reproducir música en todo su hogar de forma inalámbrica. Características. » Marca: Bose. » Modelo: SoundTouch. » Color: Negro",
+     "price": 29990,
+     "discount": 12,
+     "image": "img-parlante-bose.jpg",
+     "category": "visited"
     },
     {
-        "id": 12,
-        "name": "Cámara Canon EOS Rebel T7",
-        "price": 499.99,
-        "discount": 50,
-        "category": "visited",
-        "description": "Cámara réflex digital con sensor CMOS de 24.1 megapíxeles y grabación de video Full HD.",
-        "image": "https://ejemplo.com/imagen12.jpg"
+     "id": 12,
+     "name": "Home Theatre Sony Bdv-e4100",
+     "description": "El sonido Surround de 5.1 canales y 1000 W proporciona un audio de verdadero impacto en los efectos especiales de películas y efectos de sonido de música y deportes. Con la tecnología Near Field Communication(NFC) podés disfrutar de Sonido One- Touch para reproducir música de forma instantánea",
+     "price": 32990,
+     "discount": 0,
+     "image": "img-home-theater-sony.jpg",
+     "category": "visited"
     },
     {
-        "id": 13,
-        "name": "Robot aspirador Roomba 960",
-        "price": 699.99,
-        "discount": 100,
-        "category": "visited",
-        "description": "Robot aspirador con sistema de navegación inteligente y control por voz con Alexa y Google Assistant.",
-        "image": "https://ejemplo.com/imagen13.jpg"
+     "id": 13,
+     "name": "Smart TV Samsung 4K 50",
+     "description": "Con el Smart TV Samsung UN50MU6100, viví una nueva experiencia visual con la resolución 4K, que te presentará imágenes con gran detalle y de alta calidad. Ahora todo lo que veas cobrará vida con brillo y colores más reales. Gracias a su tamaño de 50\", podrás transformar tu espacio en una sala de cine y transportarte a donde quieras.",
+     "price": 34990,
+     "discount": 0,
+     "image": "img-tv-samsung-smart.jpg",
+     "category": "visited"
     },
     {
-        "id": 14,
-        "name": "Teclado mecánico Corsair K95 RGB",
-        "price": 199.99,
-        "discount": 0,
-        "category": "in-sale",
-        "description": "Teclado mecánico con interruptores Cherry MX Speed, retroiluminación RGB y reposamuñecas extraíble.",
-        "image": "https://ejemplo.com/imagen14.jpg"
+     "id": 14,
+     "name": "Sony S6700 Reproductor De Blu-ray ",
+     "description": "Disfruta de tus películas favoritas con hasta cuatro veces más detalles que Full HD, gracias a la conversión de señales 4K. Cuando se conecta a un televisor compatible,un procesador de video avanzado convierte el video estándar en una señal cercana a la resolución 4K (3840 x 2160). Con ocho millones de píxeles, obtendrás imágenes más nítidas y detalladas, y la mayor calidad de la image te permite sentarte más cerca de la pantalla para que te sientas como en el cine.",
+     "price": 10999,
+     "discount": 5,
+     "image": "img-sony-blueray.jpg",
+     "category": "visited"
     },
     {
-        "id": 15,
-        "name": "Impresora multifunción Epson EcoTank",
-        "price": 399.99,
-        "discount": 0,
-        "category": "visited",
-        "description": "Impresora con sistema de tanque de tinta que reduce el costo por página y evita los cartuchos de tinta.",
-        "image": "https://ejemplo.com/imagen15.jpg"
+     "id": 15,
+     "name": "Bicicleta Mountain Bike Fierce Rodado 29",
+     "description": "Bicicleta Mountain Bike Fierce Rodado 29 21 velocidades. Tipo: Mountain Bike. Rodado: 29. Material Cuadro: Aluminio. Talle: 18. Suspensión: Delantera. Velocidades: 21 - Shimano. Sistema de Freno: Disco Mecánico. Llantas: Doble pared.",
+     "price": 15979,
+     "discount": 12,
+     "image": "img-bicicleta-fierce.jpg",
+     "category": "visited"
     },
     {
-        "id": 16,
-        "name": "Teléfono móvil Xiaomi Mi 11",
-        "price": 699.99,
-        "discount": 50,
-        "category": "in-sale",
-        "description": "Teléfono inteligente con pantalla AMOLED de 6.81 pulgadas, procesador Snapdragon 888 y cámara principal de 108MP.",
-        "image": "https://ejemplo.com/imagen16.jpg"
-    },
-    {
-        "id": 17,
-        "name": "Cafetera Nespresso Vertuo",
-        "price": 149.99,
-        "discount": 0,
-        "category": "visited",
-        "description": "Cafetera de cápsulas con tecnología Centrifusion para preparar café y espresso con un solo botón.",
-        "image": "https://ejemplo.com/imagen17.jpg"
-    },
-    {
-        "id": 18,
-        "name": "Altavoz Bluetooth JBL Charge 4",
-        "price": 149.99,
-        "discount": 20,
-        "category": "visited",
-        "description": "Altavoz portátil con certificación IPX7 resistente al agua y batería de hasta 20 horas de reproducción.",
-        "image": "https://ejemplo.com/imagen18.jpg"
-    },
-    {
-        "id": 19,
-        "name": "Smart TV Sony Bravia OLED",
-        "price": 1999.99,
-        "discount": 200,
-        "category": "in-sale",
-        "description": "Televisor OLED con resolución 4K, procesador X1 Ultimate y Android TV para acceder a tus aplicaciones favoritas.",
-        "image": "https://ejemplo.com/imagen19.jpg"
-    },
-    {
-        "id": 20,
-        "name": "Auriculares inalámbricos Apple AirPods Pro",
-        "price": 249.99,
-        "discount": 50,
-        "category": "in-sale",
-        "description": "Auriculares inalámbricos con cancelación activa de ruido, resistencia al agua y estuche de carga inalámbrica.",
-        "image": "https://ejemplo.com/imagen20.jpg"
+     "id": 16,
+     "name": "Sony Srs-xb12 Parlante Bluetooth Portátil",
+     "price": 4699,
+     "discount": 5,
+     "category": "in-sale",
+     "description": "Deja que la música dance cobre vida con EXTRA BASS™ Anima el ambiente con EXTRA BASS™1. Un radiador pasivo trabaja con el parlante monoaural para potenciar los tonos bajos y mejorar los graves, a pesar del tamaño compacto. ",
+     "image": "img-parlante-sony.jpg"
     }
-]
+   ]
