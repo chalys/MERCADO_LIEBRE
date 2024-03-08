@@ -22,3 +22,11 @@
     resize: vertical;
     padding: 15px;
   }
+
+  .custom-file-input{
+    padding-top: 10px !important;
+    height: 45px;
+    border-radius: 8px !important;
+    font-size: 1.5em !important;
+    border: solid 1px var(--gray) !important;
+  }

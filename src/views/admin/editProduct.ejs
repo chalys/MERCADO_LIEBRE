@@ -2,7 +2,6 @@
 <html lang="es">
 <!-- Include Head -->
 <%- include('../partials/head', {title: 'Editando: ' + product.name }) %>
-
 	<body>
 		<!-- Header -->
 		<%- include('../partials/headerNavbar') %>
@@ -11,11 +10,14 @@
 			<div class="container products-wrapper">
 				<div class="row">
 					<div class="col-12">
-						<h2 class="products-title">Estás editando: <i><%= product.name %></i></h2>
+						<h2 class="products-title">Estás editando: <i>
+								<%= product.name %>
+							</i></h2>
 					</div>
 				</div>
 				<div class="col-12">
-					<form action="/admin/editar-producto/<%= product.id %>?_method=PUT" method="post">
+					<form action="/admin/editar-producto/<%= product.id %>?_method=PUT" method="post"
+						enctype="multipart/form-data">
 						<div class="row product-detail">
 							<div class="col-12 col-md-6">
 								<label for="name" class="form-label">Nombre del producto:</label>
@@ -47,12 +49,17 @@
 								<textarea name="description" id="description"
 									class="form-input"><%= product.description %></textarea>
 							</div>
-							<div class="col-6"></div>
-							<div class="col-3">
+							<div class="col-12 mb-3">
+								<label for="imagen" class="form-label">Imagen del producto</label>
+								<input class="form-control custom-file-input" name="img" type="file" id="imagen" accept=".jpg, .jpeg, .png"> 
+							</div>
+							<div class="col-9"></div>
+							<div class="col-1">
 								<button type="submit" class="buy-now-button">Confirmar</button>
 							</div>
-							<div class="col-3">
-								<a href="/productos" class="buy-now-button" style="background-color: gray; color: white;">Cancelar</a>
+							<div class="col-2">
+								<a href="/productos" class="buy-now-button"
+									style="background-color: gray; color: white !important;">Cancelar</a>
 							</div>
 						</div>
 					</form>

@@ -1,26 +1,3 @@
-/*
-const express = require("express");
-const app = express();
-const path = require("path");
-const port = 3030;
-
-app.use(express.static("public"));
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/home.html"));
-});
-
-app.get("/registro", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/register.html"));
-});
-
-app.get("/acceso", (req, res) => {
-  res.sendFile(path.join(__dirname, "./views/login.html"));
-});
-
-app.listen(port, () => console.log(`http://localhost:${port}`));*/
-
-
 // ************ Require's ************
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
@@ -44,8 +21,6 @@ app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
-
-
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
 const otherRouter = require('./routes/other.routes'); // Rutas main
@@ -55,8 +30,6 @@ const productsRouter = require('./routes/products.routes') // Rutas /products
 app.use('/', otherRouter);
 app.use('/admin', adminRouter);
 app.use('/productos', productsRouter)
-
-
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
