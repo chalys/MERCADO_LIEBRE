@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<%- include('../partials/head', {title: 'Login: ¿?' }) %>
+    <!-- /Head -->
+
+    <body>
+        <!-- Header -->
+        <%- include('../partials/headerNavbar') %>
+            <!-- /Header -->
+
+            <!-- main -->
+            <main>
+
+                <!-- banner -->
+                <div class="m-section m-section__banner"><img class="banner" src="/images/img-home-banner.jpg"
+                        alt="img-home-banner">
+                </div>
+                <div class="container my-5">
+                    <form class="row justify-content-center needs-validation" novalidate>
+                        <!-- Nombre y Apellido -->
+                        <div class="col-10 col-md-6 col-lg-4 mb-3">
+                            <input type="text" class="form-control" name="fullName" id="fullName"
+                                placeholder="Nombre y apellido" required>
+                            <div class="invalid-feedback">
+                                Introduzca el Nombre y Apellido
+                            </div>
+                        </div>
+                        <!-- Nombre de Usuario -->
+                        <div class="col-10 col-md-6 col-lg-4 mb-3">
+                            <input type="text" class="form-control" name="userName" id="userName"
+                                placeholder="Nombre de usuario" required>
+                            <div class="invalid-feedback">
+                                Introduzca un nombre de usuario
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-10 col-md-6 col-lg-4 mb-3">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail"
+                                required>
+                            <div class="invalid-feedback">
+                                Introduzca un E-mail
+                            </div>
+                        </div>
+                        <!-- Domicilio -->
+                        <div class="col-10 col-md-6 col-lg-4 mb-3">
+                            <input type="text" class="form-control" id="addressInput" placeholder="Domicilio" required>
+                            <div class="invalid-feedback">
+                                Introduzca su dirección
+                            </div>
+                        </div>
+                        <!-- Fecha de Nacimiento -->
+                        <div class="col-10 col-md-6 col-lg-4 mb-3">
+                            <h5 class="col-12">Fecha de nacimiento</h5>
+                            <div class="mb-3">
+                                <input type="date" class="form-control" id="fechaNac" name="fechaNac"
+                                    value="2024-08-02">
+                                <div class="invalid-feedback">
+                                    Valor inválido
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Perfil de usuario -->
+                        <div class="col-10 col-md-12 col-lg-12 mb-3" style="background-color: yellow;">
+                            <h5 class="col-12">Perfil del usuario</h5>
+                            <div class=" col-12 col-md-6 col-lg-4 d-flex justify-content-between">
+                                <div>
+                                    <input type="radio" class="form-check-input" name="perfilUsuario" id="compra"
+                                        value="compra" checked>
+                                    <label class="form-label" for="compra">Comprador</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="form-check-input" name="perfilUsuario" id="venta"
+                                        value="venta">
+                                    <label class="form-label" for="venta">Vendedor</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Intereses -->
+                        <div class="col-10 col-md-12 col-lg-12 mb-3" style="background-color: yellow;">
+                            <h5 class="col-12">Intereses</h5>
+                            <div class="col-12 col-md-12 d-md-flex flex-md-wrap">
+                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
+                                    <input class="form-check-input" type="checkbox" name="intereses" value="electro"
+                                        id="electro" checked>
+                                    <label class="form-check-label" for="electro">
+                                        Electro
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
+                                    <input class="form-check-input" type="checkbox" name="intereses" value="moda"
+                                        id="moda">
+                                    <label class="form-check-label" for="moda">
+                                        Moda
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
+                                    <input class="form-check-input" type="checkbox" name="intereses" value="hogar"
+                                        id="hogar">
+                                    <label class="form-check-label" for="hogar">
+                                        Hogar
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
+                                    <input class="form-check-input" type="checkbox" name="intereses" value="jugueteria"
+                                        id="jugueteria">
+                                    <label class="form-check-label" for="jugueteria">
+                                        Juguetería
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
+                                    <input class="form-check-input" type="checkbox" name="intereses" value="vidaSana"
+                                        id="vidaSana">
+                                    <label class="form-check-label" for="vidaSana">
+                                        Vida sana
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Foto de usuario -->
+                        <div class="col-10 col-md-12 col-lg-12 d-flex flex-column" style="background-color: yellow;">
+                            <!-- Imagen -->
+                            <div class="mb-3">
+                                <figure>
+                                    <img class="img-thumbnail" src="/images/No_Image_Available.png"
+                                        alt="default-imagen">
+                                </figure>
+                            </div>
+                            <!-- Upload imagen -->
+                            <div class="mb-3">
+                                <input class="form-control" type="file" name="imagen" id="imagen" value="" accept=".jpg"
+                                    multiple required>
+                                <div class="valid-feedback">
+                                    Correcto
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es necesario subir una imagen
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contraseñas -->
+                        <!-- <div class="col-10 col-md-12 col-lg-12 mb-3" style="background-color: yellow;"> -->
+                        <div class="col-10 col-md-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center"
+                            style="background-color: yellow;">
+                            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                <input class="form-control" type="password" id="password" placeholder="Password"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Valor inválido
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                <input class="form-control" type="password" id="confirmationPassword"
+                                    placeholder="Password Confirmation" required>
+                                <div class="invalid-feedback">
+                                    Valor inválido
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Botones-->
+                        <div
+                            class="col-10 col-md-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-2">
+                            <button type="submit" class="btn btn-primary btn-block">REGISTRAR</button>
+                            <button type="button" class="btn btn-danger btn-block">CANCELAR</button>
+                        </div>
+                    </form>
+                </div>
+
+            </main>
+            <!-- main -->
+            <!-- footer -->
+            <%- include('../partials/footer') %>
+                <!-- /footer -->
+
+                <!-- scripts -->
+                <%- include("../partials/scripts") %>
+                    <!-- /scripts -->
+    </body>
+</html>
+
