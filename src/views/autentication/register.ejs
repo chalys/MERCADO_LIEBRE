@@ -11,165 +11,189 @@
             <!-- /Header -->
 
             <!-- main -->
-            <main>
-
-                <!-- banner -->
-                <div class="m-section m-section__banner"><img class="banner" src="/images/img-home-banner.jpg"
-                        alt="img-home-banner">
+            <div class="container products-wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="products-title">Registro de usuario</h2>
+                    </div>
                 </div>
-                <div class="container my-5">
-                    <form class="row justify-content-center needs-validation" novalidate>
-                        <!-- Nombre y Apellido -->
-                        <div class="col-10 col-md-6 col-lg-4 mb-3">
-                            <input type="text" class="form-control" name="fullName" id="fullName"
-                                placeholder="Nombre y apellido" required>
-                            <div class="invalid-feedback">
-                                Introduzca el Nombre y Apellido
+                <div class="col-12">
+                    <form action="">
+                        <div class="row">
+                            <!-- Nombre y Apellido -->
+                            <div class="col-12 col-md-6">
+                                <label for="FullName" class="form-label">Nombre y Apellido</label>
+                                <input type="text" class="form-input" name="fullName" id="fullName"
+                                    placeholder="Introduzca su nombre y apellido">
                             </div>
-                        </div>
-                        <!-- Nombre de Usuario -->
-                        <div class="col-10 col-md-6 col-lg-4 mb-3">
-                            <input type="text" class="form-control" name="userName" id="userName"
-                                placeholder="Nombre de usuario" required>
-                            <div class="invalid-feedback">
-                                Introduzca un nombre de usuario
+                            <!-- /Nombre y Apellido -->
+                            <!-- Nombre de Usuario -->
+                            <div class="col-12 col-md-6">
+                                <label for="userName" class="form-label">Nombre de usuario</label>
+                                <input type="text" class="form-input" name="userName" id="userName"
+                                    placeholder="Introduzca un nombre de usuario">
                             </div>
-                        </div>
-                        <!-- Email -->
-                        <div class="col-10 col-md-6 col-lg-4 mb-3">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail"
-                                required>
-                            <div class="invalid-feedback">
-                                Introduzca un E-mail
-                            </div>
-                        </div>
-                        <!-- Domicilio -->
-                        <div class="col-10 col-md-6 col-lg-4 mb-3">
-                            <input type="text" class="form-control" id="addressInput" placeholder="Domicilio" required>
-                            <div class="invalid-feedback">
-                                Introduzca su dirección
-                            </div>
-                        </div>
-                        <!-- Fecha de Nacimiento -->
-                        <div class="col-10 col-md-6 col-lg-4 mb-3">
-                            <h5 class="col-12">Fecha de nacimiento</h5>
-                            <div class="mb-3">
-                                <input type="date" class="form-control" id="fechaNac" name="fechaNac"
-                                    value="2024-08-02">
-                                <div class="invalid-feedback">
-                                    Valor inválido
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Perfil de usuario -->
-                        <div class="col-10 col-md-12 col-lg-12 mb-3" style="background-color: yellow;">
-                            <h5 class="col-12">Perfil del usuario</h5>
-                            <div class=" col-12 col-md-6 col-lg-4 d-flex justify-content-between">
-                                <div>
-                                    <input type="radio" class="form-check-input" name="perfilUsuario" id="compra"
-                                        value="compra" checked>
-                                    <label class="form-label" for="compra">Comprador</label>
-                                </div>
-                                <div>
-                                    <input type="radio" class="form-check-input" name="perfilUsuario" id="venta"
-                                        value="venta">
-                                    <label class="form-label" for="venta">Vendedor</label>
-                                </div>
+                            <!-- /Nombre de Usuario -->
+                            <!-- Email -->
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-input" name="email" id="email"
+                                    placeholder="Introduzca su e-mail">
 
                             </div>
-                        </div>
-                        <!-- Intereses -->
-                        <div class="col-10 col-md-12 col-lg-12 mb-3" style="background-color: yellow;">
-                            <h5 class="col-12">Intereses</h5>
-                            <div class="col-12 col-md-12 d-md-flex flex-md-wrap">
-                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
-                                    <input class="form-check-input" type="checkbox" name="intereses" value="electro"
-                                        id="electro" checked>
-                                    <label class="form-check-label" for="electro">
-                                        Electro
-                                    </label>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
-                                    <input class="form-check-input" type="checkbox" name="intereses" value="moda"
-                                        id="moda">
-                                    <label class="form-check-label" for="moda">
-                                        Moda
-                                    </label>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
-                                    <input class="form-check-input" type="checkbox" name="intereses" value="hogar"
-                                        id="hogar">
-                                    <label class="form-check-label" for="hogar">
-                                        Hogar
-                                    </label>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
-                                    <input class="form-check-input" type="checkbox" name="intereses" value="jugueteria"
-                                        id="jugueteria">
-                                    <label class="form-check-label" for="jugueteria">
-                                        Juguetería
-                                    </label>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-3 ps-3 pb-3">
-                                    <input class="form-check-input" type="checkbox" name="intereses" value="vidaSana"
-                                        id="vidaSana">
-                                    <label class="form-check-label" for="vidaSana">
-                                        Vida sana
-                                    </label>
+                            <!-- /Email -->
+                            <!-- Fecha de Nacimiento -->
+                            <div class="col-12 col-md-6">
+                                <label for="birthDate" class="form-label">Fecha de nacimiento</label>
+                                <input type="date" class="form-input" id="birthDate" name="birthDate">
+                            </div>
+                            <!-- /Fecha de Nacimiento -->
+                            <!-- Domicilio -->
+                            <div class="col-12">
+                                <label for="address" class="form-label">Domicilio</label>
+                                <input type="text" class="form-input" name="address" id="address"
+                                    placeholder="Introduzca la dirección de su domicilio">
+                            </div>
+                            <!-- /Domicilio -->
+                            <!-- Perfil de usuario -->
+                            <div class="col-12">
+                                <label for="userProfile" class="form-label">Perfil de usuario</label>
+                                <div class="d-md-flex flex-md-wrap ps-3"> <!-- row ps-3-->
+                                    <div class="form-check col-md-4 d-flex col-lg-3 align-items-center gap-3">
+                                        <input type="radio" class="form-check-input" name="userProfile" id="compra"
+                                            value="compra" checked>
+                                        <label class="form-label" for="compra">Comprador</label>
+                                    </div>
+                                    <div class="form-check col-md-2 d-flex align-items-center gap-3">
+                                        <input type="radio" class="form-check-input" name="userProfile" id="venta"
+                                            value="venta">
+                                        <label class="form-label" for="venta">Vendedor</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <!-- /Perfil de usuario -->
+                            <!-- Intereses -->
+                            <div class="col-12">
+                                <label for="interests" class="form-label">Intereses</label>
+                                <div class="d-md-flex flex-md-wrap ps-3">
+                                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
+                                        <input class="form-check-input" type="checkbox" name="interests" value="electro"
+                                            id="electro">
+                                        <label class="form-label" for="electro">
+                                            Electro
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
+                                        <input class="form-check-input" type="checkbox" name="interests" value="moda"
+                                            id="moda">
+                                        <label class="form-label" for="moda">
+                                            Moda
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
+                                        <input class="form-check-input" type="checkbox" name="interests" value="hogar"
+                                            id="hogar">
+                                        <label class="form-label" for="hogar">
+                                            Hogar
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
+                                        <input class="form-check-input" type="checkbox" name="interests"
+                                            value="jugueteria" id="jugueteria">
+                                        <label class="form-label" for="jugueteria">
+                                            Juguetería
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
+                                        <input class="form-check-input" type="checkbox" name="interests"
+                                            value="vidaSana" id="vidaSana">
+                                        <label class="form-label" for="vidaSana">
+                                            Vida sana
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Intereses -->
+                            <!-- Foto de Usuario -->
+                            <div class="col-12">
+                                <label for="imagen" class="form-label">Foto usuario</label>
+                                <input class="form-control custom-file-input" name="img" type="file" id="imagen"
+                                    accept=".jpg, .jpeg, .png">
+                            </div>
+                            <!-- /Foto de Usuario -->
+                            <!-- Contraseñas -->
+                            <div class="col-12 col-md-6">
+                                <label for="imagen" class="form-label">Contraseña</label>
+                                <input class="form-input" type="password" id="password" placeholder="Password">
 
-                        <!-- Foto de usuario -->
-                        <div class="col-10 col-md-12 col-lg-12 d-flex flex-column" style="background-color: yellow;">
-                            <!-- Imagen -->
-                            <div class="mb-3">
-                                <figure>
-                                    <img class="img-thumbnail" src="/images/No_Image_Available.png"
-                                        alt="default-imagen">
-                                </figure>
                             </div>
-                            <!-- Upload imagen -->
-                            <div class="mb-3">
-                                <input class="form-control" type="file" name="imagen" id="imagen" value="" accept=".jpg"
-                                    multiple required>
-                                <div class="valid-feedback">
-                                    Correcto
-                                </div>
-                                <div class="invalid-feedback">
-                                    Es necesario subir una imagen
-                                </div>
+                            <!-- /Contraseñas -->
+                            <!-- Nueva Contraseñas -->
+                            <div class="col-12 col-md-6">
+                                <label for="imagen" class="form-label">Confirmar contraseña</label>
+                                <input class="form-input" type="password" id="confirmationPassword"
+                                    placeholder="Password Confirmation">
+
                             </div>
+                            <!-- /Nueva Contraseñas -->
+                            <!-- Botones-->
+                            <!-- <div class="col-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-2"> -->
+                            <div class="col-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-3">
+                                <button type="submit" class="btn btn-primary btn-block">REGISTRAR</button>
+                                <button type="button" class="btn btn-danger btn-block">CANCELAR</button>
+                            </div>
+                            <!-- /Botones-->
                         </div>
-                        <!-- Contraseñas -->
-                        <!-- <div class="col-10 col-md-12 col-lg-12 mb-3" style="background-color: yellow;"> -->
-                        <div class="col-10 col-md-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center"
-                            style="background-color: yellow;">
-                            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                <input class="form-control" type="password" id="password" placeholder="Password"
-                                    required>
-                                <div class="invalid-feedback">
-                                    Valor inválido
-                                </div>
+                    </form>
+
+
+
+                    <form action="/admin/crear-producto" method="post" enctype="multipart/form-data">
+                        <div class="row product-detail">
+                            <div class="col-12 col-md-6">
+                                <label for="name" class="form-label">Nombre del producto:</label>
+                                <input type="text" id="name" name="name" placeholder="Ej: Zapatillas Reebok"
+                                    class="form-input">
                             </div>
-                            <div class="col-12 col-md-6 col-lg-3 mb-3">
-                                <input class="form-control" type="password" id="confirmationPassword"
-                                    placeholder="Password Confirmation" required>
-                                <div class="invalid-feedback">
-                                    Valor inválido
-                                </div>
+                            <div class="col-12 col-md-6">
+                                <label for="price" class="form-label">Precio del producto:</label>
+                                <input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
                             </div>
-                        </div>
-                        <!-- Botones-->
-                        <div
-                            class="col-10 col-md-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-2">
-                            <button type="submit" class="btn btn-primary btn-block">REGISTRAR</button>
-                            <button type="button" class="btn btn-danger btn-block">CANCELAR</button>
+                            <div class="col-12 col-md-6">
+                                <label for="discount" class="form-label">Descuento:</label>
+                                <input type="text" id="discount" name="discount" placeholder="Ej: 15"
+                                    class="form-input">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="category" class="form-label">Categoría:</label>
+                                <select name="category" id="category" class="form-input">
+                                    <option value="" selected hidden>Elegí</option>
+                                    <option value="in-sale">En oferta</option>
+                                    <option value="visited">Últimos agregados</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="description" class="form-label">Descripción:</label>
+                                <textarea name="description" id="description" class="form-input"></textarea>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="imagen" class="form-label">Imagen del producto</label>
+                                <input class="form-control custom-file-input" name="img" type="file" id="imagen"
+                                    accept=".jpg, .jpeg, .png">
+                            </div>
+                            <div class="col-9"></div>
+                            <div class="col-1">
+                                <button type="submit" class="buy-now-button">Confirmar</button>
+                            </div>
+                            <div class="col-2">
+                                <a href="/productos" class="buy-now-button"
+                                    style="background-color: gray; color: white !important;">Cancelar</a>
+                            </div>
                         </div>
                     </form>
                 </div>
+            </div>
 
-            </main>
             <!-- main -->
             <!-- footer -->
             <%- include('../partials/footer') %>
@@ -179,5 +203,5 @@
                 <%- include("../partials/scripts") %>
                     <!-- /scripts -->
     </body>
-</html>
 
+</html>
