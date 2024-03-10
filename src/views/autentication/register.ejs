@@ -2,7 +2,7 @@
 <html lang="es">
 
 <!-- Head -->
-<%- include('../partials/head', {title: 'Login: ¿?' }) %>
+<%- include('../partials/head', {title: 'Formulario de creación' }) %>
     <!-- /Head -->
 
     <body>
@@ -14,17 +14,18 @@
             <div class="container products-wrapper">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="products-title">Registro de usuario</h2>
+                        <h2 class="products-title">Formulario de creación de usuario</h2>
                     </div>
                 </div>
                 <div class="col-12">
-                    <form action="">
-                        <div class="row">
+                    <form action="" method="">
+                        <div class="row product-detail">
                             <!-- Nombre y Apellido -->
                             <div class="col-12 col-md-6">
                                 <label for="FullName" class="form-label">Nombre y Apellido</label>
                                 <input type="text" class="form-input" name="fullName" id="fullName"
                                     placeholder="Introduzca su nombre y apellido">
+                                <div class="required-input text-danger fs-5">* El nombre y apellido es requerido</div>
                             </div>
                             <!-- /Nombre y Apellido -->
                             <!-- Nombre de Usuario -->
@@ -32,6 +33,7 @@
                                 <label for="userName" class="form-label">Nombre de usuario</label>
                                 <input type="text" class="form-input" name="userName" id="userName"
                                     placeholder="Introduzca un nombre de usuario">
+                                <div class="required-input text-danger fs-5">* El nombre de usuario es requerido</div>
                             </div>
                             <!-- /Nombre de Usuario -->
                             <!-- Email -->
@@ -39,13 +41,14 @@
                                 <label for="email" class="form-label">E-mail</label>
                                 <input type="email" class="form-input" name="email" id="email"
                                     placeholder="Introduzca su e-mail">
-
+                                <div class="required-input text-danger fs-5">* El e-mail es requerido</div>
                             </div>
                             <!-- /Email -->
                             <!-- Fecha de Nacimiento -->
                             <div class="col-12 col-md-6">
                                 <label for="birthDate" class="form-label">Fecha de nacimiento</label>
                                 <input type="date" class="form-input" id="birthDate" name="birthDate">
+                                <div class="required-input text-danger fs-5">* La fecha de nacimiento es requerida</div>
                             </div>
                             <!-- /Fecha de Nacimiento -->
                             <!-- Domicilio -->
@@ -53,6 +56,7 @@
                                 <label for="address" class="form-label">Domicilio</label>
                                 <input type="text" class="form-input" name="address" id="address"
                                     placeholder="Introduzca la dirección de su domicilio">
+                                <div class="required-input text-danger fs-5">* La dirección es requerida</div>
                             </div>
                             <!-- /Domicilio -->
                             <!-- Perfil de usuario -->
@@ -70,6 +74,7 @@
                                         <label class="form-label" for="venta">Vendedor</label>
                                     </div>
                                 </div>
+                                <div class="required-input text-danger fs-5">* El perfil de usuario es requerido</div>
                             </div>
                             <!-- /Perfil de usuario -->
                             <!-- Intereses -->
@@ -116,92 +121,44 @@
                             <!-- /Intereses -->
                             <!-- Foto de Usuario -->
                             <div class="col-12">
-                                <label for="imagen" class="form-label">Foto usuario</label>
+                                <label for="imagen" class="form-label">Foto de usuario</label>
                                 <input class="form-control custom-file-input" name="img" type="file" id="imagen"
                                     accept=".jpg, .jpeg, .png">
+                                <div class="required-input text-danger mt-3 fs-5">* La fotografía es requerida</div>
                             </div>
                             <!-- /Foto de Usuario -->
                             <!-- Contraseñas -->
                             <div class="col-12 col-md-6">
                                 <label for="imagen" class="form-label">Contraseña</label>
                                 <input class="form-input" type="password" id="password" placeholder="Password">
-
+                                <div class="required-input text-danger mt-3 fs-5">* La contraseña es requerida</div>
                             </div>
                             <!-- /Contraseñas -->
                             <!-- Nueva Contraseñas -->
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6 mb-3">
                                 <label for="imagen" class="form-label">Confirmar contraseña</label>
                                 <input class="form-input" type="password" id="confirmationPassword"
                                     placeholder="Password Confirmation">
-
+                                <div class="required-input text-danger mt-3 fs-5">* La confirmación de la contraseña es
+                                    requerida</div>
                             </div>
                             <!-- /Nueva Contraseñas -->
                             <!-- Botones-->
-                            <!-- <div class="col-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-2"> -->
-                            <div class="col-12 col-lg-10 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-3">
-                                <button type="submit" class="btn btn-primary btn-block">REGISTRAR</button>
-                                <button type="button" class="btn btn-danger btn-block">CANCELAR</button>
+                            <div
+                                class="col-12  d-flex flex-column flex-md-row justify-content-md-center justify-content-lg-end gap-md-3">
+                                <button type="submit" class="buy-now-button">REGISTRAR</button>
+                                <a href="/productos" class="buy-now-button cancel-button">CANCELAR</a>
                             </div>
                             <!-- /Botones-->
                         </div>
                     </form>
-
-
-
-                    <form action="/admin/crear-producto" method="post" enctype="multipart/form-data">
-                        <div class="row product-detail">
-                            <div class="col-12 col-md-6">
-                                <label for="name" class="form-label">Nombre del producto:</label>
-                                <input type="text" id="name" name="name" placeholder="Ej: Zapatillas Reebok"
-                                    class="form-input">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="price" class="form-label">Precio del producto:</label>
-                                <input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="discount" class="form-label">Descuento:</label>
-                                <input type="text" id="discount" name="discount" placeholder="Ej: 15"
-                                    class="form-input">
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <label for="category" class="form-label">Categoría:</label>
-                                <select name="category" id="category" class="form-input">
-                                    <option value="" selected hidden>Elegí</option>
-                                    <option value="in-sale">En oferta</option>
-                                    <option value="visited">Últimos agregados</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label for="description" class="form-label">Descripción:</label>
-                                <textarea name="description" id="description" class="form-input"></textarea>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="imagen" class="form-label">Imagen del producto</label>
-                                <input class="form-control custom-file-input" name="img" type="file" id="imagen"
-                                    accept=".jpg, .jpeg, .png">
-                            </div>
-                            <div class="col-9"></div>
-                            <div class="col-1">
-                                <button type="submit" class="buy-now-button">Confirmar</button>
-                            </div>
-                            <div class="col-2">
-                                <a href="/productos" class="buy-now-button"
-                                    style="background-color: gray; color: white !important;">Cancelar</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- main -->
-            <!-- footer -->
-            <%- include('../partials/footer') %>
-                <!-- /footer -->
-
-                <!-- scripts -->
-                <%- include("../partials/scripts") %>
-                    <!-- /scripts -->
+                    <!-- main -->
+                    <!-- footer -->
+                    <%- include('../partials/footer') %>
+                        <!-- /footer -->
+                        <!-- scripts -->
+                        <%- include("../partials/scripts") %>
+                            <!-- /scripts -->
     </body>
 
 </html>

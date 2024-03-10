@@ -168,7 +168,12 @@
     border: none;
     margin-bottom: 15px;
   }
-  
+
+  .cancel-button{
+    background-color: var(--gray);
+    color: white !important;
+  }
+    
   .action-button {
     border: none;
     border-radius: 8px;
