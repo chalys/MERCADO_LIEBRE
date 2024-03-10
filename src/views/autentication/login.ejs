@@ -2,7 +2,7 @@
 <html lang="es">
 
 <!-- Head -->
-<%- include('../partials/head', {title: 'Login: ¿?' }) %>
+<%- include('../partials/head', {title: 'Inicio de sesión' }) %>
     <!-- /Head -->
 
     <body>
@@ -11,101 +11,66 @@
             <!-- /Header -->
 
             <!-- main -->
-            <main class="login container mt-5">
-                <!-- <div class="row justify-content-center">
-            <div data-aos="fade-up" data-aos-duration="2000" class="card col-10 col-md-4 shadow ">
-                <div class="card-body">
-                    <h5 class="card-title border-dark border-bottom border-3 text-end mb-5">Login</h5>
-
-                    <form action="/login" method="post">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" placeholder="correo@correo.com" class="form-control" id="email">
-
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" placeholder="tu contraseña" id="password">
-                        </div>
-
-                        <div class="form-text text-danger fw-bold text-center">Credenciales invalidas</div>
-
-                        <div class="form-text d-flex gap-1">
-                            ¿No estás registrado?
-                            <a href="/registrar" class="link-custom-orange">Registrate</a>
-                        </div>
-
-                        <div class="my-3 form-check">
-                            <input type="checkbox" name="remember" class="form-check-input" id="remember">
-                            <label class="form-check-label" for="remember">Recordame</label>
-                        </div>
-
-                        <div class="text-end">
-                            <a href="/" class="btn btn-secondary">Cancelar</a>
-                            <button type="submit" class="btn btn-custom-orange">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>  -->
-
-                <!-- main -->
-                <div class="container products-wrapper">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="products-title">Formulario de creación de usuario</h2>
-                        </div>
+            <div class="container container-wrapper">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="products-title">Inicio de sesión</h2>
                     </div>
-                    <div class="col-12">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 ">
                         <form action="" method="">
-                            <div class="row product-detail col-md-6 justify-content-center">
+                            <div class="row product-detail">
                                 <!-- Nombre de usuario -->
                                 <div class="col-12">
                                     <label for="userName" class="form-label">Nombre de usuario</label>
                                     <input type="text" class="form-input" name="userName" id="userName"
-                                        placeholder="Introduzca un nombre de usuario">
+                                        placeholder="Introduzca su nombre de usuario">
+                                    <div class="required-input text-danger fs-5">* El nombre de usuario es requerido
+                                    </div>
                                 </div>
                                 <!-- /Nombre de usuario-->
                                 <!-- Contraseña -->
                                 <div class="col-12">
                                     <label for="imagen" class="form-label">Contraseña</label>
-                                    <input class="form-input" type="password" id="password" placeholder="Introduzca su contraseña">
+                                    <input class="form-input" type="password" id="password"
+                                        placeholder="Introduzca su contraseña">
                                     <div class="required-input text-danger mt-3 fs-5">* La contraseña es requerida</div>
                                 </div>
                                 <!-- /Contraseña -->
-                                <!-- 2 column grid layout for inline styling -->
-                                <div class="row mb-4">
+                                <!-- Olvidaste tu contraseña -->
+                                <div class="row mb-4 form-label">
                                     <div class="col d-flex justify-content-center">
-                                        <!-- Checkbox -->
+                                        <!-- Recuérdame -->
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="form2Example31"
-                                                checked />
-                                            <label class="form-check-label" for="form2Example31"> Remember me </label>
+                                            <input class="form-check-input" type="checkbox" value="" name="rememberMe"
+                                                id="rememberMe" checked />
+                                            <label class="form-check-label" for="rememberMe"> Recuérdame </label>
                                         </div>
                                     </div>
-
+                                    <!-- Enlace olvidaste tu contraseña -->
                                     <div class="col">
-                                        <!-- Simple link -->
-                                        <a href="#!">Forgot password?</a>
+                                        <a href="#!">¿Olvidaste tu contraseña?</a>
                                     </div>
+                                    <!-- /Enlace olvidaste tu contraseña -->
                                 </div>
-                                <!-- /2 column grid layout for inline styling -->
+                                <!-- /Olvidaste tu contraseña -->
                                 <!-- Boton-->
                                 <div class="col-12  d-flex flex-column">
-                                    <button type="submit" class="buy-now-button">ENVIAR</button>
+                                    <button type="submit" class="buy-now-button">INGRESAR</button>
                                 </div>
                                 <!-- /Boton-->
-                                <!-- Register buttons -->
-                                <div class="text-center">
-                                    <p>Not a member? <a href="/autenticacion/registrar">Register</a></p>
+                                <!-- Registrar -->
+                                <div class="text-center form-label ">
+                                    <p>¿No tienes cuenta? <a href="/autenticacion/registrar">Registrate</a></p>
                                 </div>
-                                <!-- /Register buttons -->
+                                <!-- /Registrar -->
                             </div>
                         </form>
                     </div>
                 </div>
-
-            </main>
+            </div>
+            <!-- /main -->
             <!-- footer -->
             <%- include('../partials/footer') %>
                 <!-- /footer -->

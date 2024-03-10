@@ -1,16 +1,13 @@
-«
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('../partials/head', {title: 'Todos los productos' }) %>
-
+<%- include('../partials/head', {title: 'Todos los productos'}) %>
 	<body>
 		<!-- Header -->
 		<%- include('../partials/headerNavbar') %>
 			<!-- /Header -->
-
 			<!-- todos los productos -->
-			<div class="container products-wrapper">
+			<div class="container container-wrapper">
 				<div class="row">
 					<div class="col-12">
 						<h2 class="products-title">Todos los productos</h2>
@@ -41,14 +38,11 @@
 				</div>
 			</div>
 			<!-- /todos los productos -->
-
 			<!-- footer -->
 			<%- include('../partials/footer') %>
-			<!-- /footer -->
-
-			<!-- scripts -->
-			<%- include("../partials/scripts") %>
-			<!-- /scripts -->
+				<!-- /footer -->
+				<!-- scripts -->
+				<%- include("../partials/scripts") %>
+					<!-- /scripts -->
 	</body>
-
 </html>

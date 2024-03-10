@@ -2,7 +2,7 @@
 <html lang="es">
 
 <!-- Head -->
-<%- include('../partials/head', {title: 'Formulario de creación' }) %>
+<%- include('../partials/head', {title: 'Formulario de registro' }) %>
     <!-- /Head -->
 
     <body>
@@ -11,10 +11,10 @@
             <!-- /Header -->
 
             <!-- main -->
-            <div class="container products-wrapper">
+            <div class="container container-wrapper">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="products-title">Formulario de creación de usuario</h2>
+                        <h2 class="products-title">Formulario de registro de usuario</h2>
                     </div>
                 </div>
                 <div class="col-12">
@@ -64,13 +64,13 @@
                                 <label for="userProfile" class="form-label">Perfil de usuario</label>
                                 <div class="d-md-flex flex-md-wrap ps-3"> <!-- row ps-3-->
                                     <div class="form-check col-md-4 d-flex col-lg-3 align-items-center gap-3">
-                                        <input type="radio" class="form-check-input" name="userProfile" id="compra"
-                                            value="compra" checked>
+                                        <input type="radio" class="form-check-input form-label" name="userProfile"
+                                            id="compra" value="compra" checked>
                                         <label class="form-label" for="compra">Comprador</label>
                                     </div>
                                     <div class="form-check col-md-2 d-flex align-items-center gap-3">
-                                        <input type="radio" class="form-check-input" name="userProfile" id="venta"
-                                            value="venta">
+                                        <input type="radio" class="form-check-input form-label" name="userProfile"
+                                            id="venta" value="venta">
                                         <label class="form-label" for="venta">Vendedor</label>
                                     </div>
                                 </div>
@@ -82,35 +82,35 @@
                                 <label for="interests" class="form-label">Intereses</label>
                                 <div class="d-md-flex flex-md-wrap ps-3">
                                     <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
-                                        <input class="form-check-input" type="checkbox" name="interests" value="electro"
-                                            id="electro">
-                                        <label class="form-label" for="electro">
+                                        <input class="form-check-input form-label" type="checkbox" name="interests"
+                                            value="electro" id="electro">
+                                        <label class="form-label " for="electro">
                                             Electro
                                         </label>
                                     </div>
                                     <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
-                                        <input class="form-check-input" type="checkbox" name="interests" value="moda"
-                                            id="moda">
+                                        <input class="form-check-input form-label" type="checkbox" name="interests"
+                                            value="moda" id="moda">
                                         <label class="form-label" for="moda">
                                             Moda
                                         </label>
                                     </div>
                                     <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
-                                        <input class="form-check-input" type="checkbox" name="interests" value="hogar"
-                                            id="hogar">
+                                        <input class="form-check-input form-label" type="checkbox" name="interests"
+                                            value="hogar" id="hogar">
                                         <label class="form-label" for="hogar">
                                             Hogar
                                         </label>
                                     </div>
                                     <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
-                                        <input class="form-check-input" type="checkbox" name="interests"
+                                        <input class="form-check-input form-label" type="checkbox" name="interests"
                                             value="jugueteria" id="jugueteria">
                                         <label class="form-label" for="jugueteria">
                                             Juguetería
                                         </label>
                                     </div>
                                     <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-3">
-                                        <input class="form-check-input" type="checkbox" name="interests"
+                                        <input class="form-check-input form-label" type="checkbox" name="interests"
                                             value="vidaSana" id="vidaSana">
                                         <label class="form-label" for="vidaSana">
                                             Vida sana
@@ -120,6 +120,7 @@
                             </div>
                             <!-- /Intereses -->
                             <!-- Foto de Usuario -->
+                            <!-- Checkbox -->
                             <div class="col-12">
                                 <label for="imagen" class="form-label">Foto de usuario</label>
                                 <input class="form-control custom-file-input" name="img" type="file" id="imagen"
@@ -130,7 +131,8 @@
                             <!-- Contraseña -->
                             <div class="col-12 col-md-6">
                                 <label for="imagen" class="form-label">Contraseña</label>
-                                <input class="form-input" type="password" id="password" placeholder="Introduzca su contraseña">
+                                <input class="form-input" type="password" id="password"
+                                    placeholder="Introduzca su contraseña">
                                 <div class="required-input text-danger mt-3 fs-5">* La contraseña es requerida</div>
                             </div>
                             <!-- /Contraseñs -->
@@ -152,13 +154,15 @@
                             <!-- /Botones-->
                         </div>
                     </form>
-                    <!-- main -->
-                    <!-- footer -->
-                    <%- include('../partials/footer') %>
-                        <!-- /footer -->
-                        <!-- scripts -->
-                        <%- include("../partials/scripts") %>
-                            <!-- /scripts -->
+                </div>
+            </div>
+            <!-- main -->
+            <!-- footer -->
+            <%- include('../partials/footer') %>
+                <!-- /footer -->
+                <!-- scripts -->
+                <%- include("../partials/scripts") %>
+                    <!-- /scripts -->
     </body>
 
 </html>
