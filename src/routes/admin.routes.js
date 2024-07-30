@@ -4,8 +4,7 @@ const router = express.Router();
 const { uploadProducts } = require('../middlewares/uploadFiles');
 
 // ************ Controller Require ************
-const {create, store, edit, update, destroy} = require('../controllers/admin');
-
+const {create, store, edit, update, destroy} = require
 
 // /admin
 

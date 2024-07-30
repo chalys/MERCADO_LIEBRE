@@ -5,7 +5,11 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const session = require("express-session")
 
+
+const checkSession = require("./middlewares/checkSession")
+const checkCookie = require('./middlewares/checkCookie');
 // ************ express() - (don't touch) ************
 const app = express();
 
@@ -16,6 +20,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method')); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
+app.use(session({secret:"PALABRA SECRETA"}));
+app.use(createSessionFromCookie)
+app.use(insertDataLocals)
 
 // ************ Template Engine - (don't touch) ************
 app.set('view engine', 'ejs');
@@ -27,7 +34,9 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 const otherRouter = require('./routes/other.routes'); // Rutas main
 const adminRouter = require('./routes/admin.routes'); // Rutas /admin
 const productsRouter = require('./routes/products.routes') // Rutas /products
-const authRouter = require('./routes/autentication.routes') // Rutas /autemtication
+const authRouter = require('./routes/autentication.routes'); // Rutas /autemtication
+const insertDataLocals = require('./middlewares/insertDataLocals');
+const createSessionFromCookie = require('./middlewares/createSessionFromCookie');
 
 app.use('/', otherRouter);
 app.use('/admin', adminRouter);

@@ -13,9 +13,19 @@ module.exports = (req, res) => {
     description: description.trim(),
     category: category?.trim(),
     image: image ? image.filename : "default-image.png",
+    //createAt : req.createAt
   };
 
   products.push(newProduct);
   saveData(products);
   res.redirect(`/productos/detalle/${newID}`);
-};
+} /* else {
+  //Si existen errores entonces
+  const errorsMapped = errors.mapped();
+  const old = req.body;
+
+  res.render("admin/createProduct",{
+    errors:errorsMapped,
+    old
+  })
+};*/

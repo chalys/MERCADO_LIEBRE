@@ -9,6 +9,12 @@ module.exports = {
   },
   saveData: (data, filenameJSON = "productsDataBase") => { /*se agrgo = "productsDataBase" */ 
     const pathJSON = path.join(__dirname, `./${filenameJSON}.json`);
+
+    if(!fs.existsSync(pathJSON)){
+      fs.writeFileSync(pathJSON,"[]","utf-8")
+    }//Si no existe le arhivo lo crea
+
+
     const dataString = JSON.stringify(data, null, 3);
     fs.writeFileSync(pathJSON, dataString, "utf-8");
   },
